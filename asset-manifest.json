@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/viv3k.github.io/static/css/main.d1b05096.chunk.css",
+    "main.js": "/viv3k.github.io/static/js/main.86569f39.chunk.js",
+    "main.js.map": "/viv3k.github.io/static/js/main.86569f39.chunk.js.map",
+    "runtime-main.js": "/viv3k.github.io/static/js/runtime-main.2b492693.js",
+    "runtime-main.js.map": "/viv3k.github.io/static/js/runtime-main.2b492693.js.map",
+    "static/js/2.e3d9c8ad.chunk.js": "/viv3k.github.io/static/js/2.e3d9c8ad.chunk.js",
+    "static/js/2.e3d9c8ad.chunk.js.map": "/viv3k.github.io/static/js/2.e3d9c8ad.chunk.js.map",
+    "index.html": "/viv3k.github.io/index.html",
+    "precache-manifest.d43e6f86353f80671bc29d7d9b8cb5d6.js": "/viv3k.github.io/precache-manifest.d43e6f86353f80671bc29d7d9b8cb5d6.js",
+    "service-worker.js": "/viv3k.github.io/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/viv3k.github.io/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.e3d9c8ad.chunk.js.LICENSE.txt": "/viv3k.github.io/static/js/2.e3d9c8ad.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/viv3k.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b492693.js",
+    "static/js/2.e3d9c8ad.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.86569f39.chunk.js"
+  ]
+}
