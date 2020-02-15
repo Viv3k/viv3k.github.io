@@ -62,17 +62,18 @@ export function HomePage({
       <Helmet>
         <title>Home Page</title>
         <meta
-          name="description"
-          content="A React.js Boilerplate application homepage"
+          name="Home"
+          content="Home of the dev log"
         />
       </Helmet>
       <div>
         <CenteredSection>
           <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
+            <FormattedMessage {...messages.introductionPlaceholder} />
           </H2>
+          <br />
           <p>
-            <FormattedMessage {...messages.startProjectMessage} />
+            <FormattedMessage {...messages.welcomePlaceholder} />
           </p>
         </CenteredSection>
         <Section>
@@ -88,7 +89,7 @@ export function HomePage({
               <Input
                 id="username"
                 type="text"
-                placeholder="mxstbr"
+                placeholder="viv3k"
                 value={username}
                 onChange={onChangeUsername}
               />

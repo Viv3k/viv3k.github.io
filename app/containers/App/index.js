@@ -20,7 +20,7 @@ import Footer from 'components/Footer';
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
+  max-width: calc(800px + 128px * 2);
   margin: 0 auto;
   display: flex;
   min-height: 100%;
@@ -32,10 +32,10 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="%s - Viv3k"
+        defaultTitle="Viv3k"
       >
-        <meta name="description" content="A React.js Boilerplate application" />
+        <meta name="description" content="Personal website for github user Viv3k" />
       </Helmet>
       <Header />
       <Switch>
@@ -48,3 +48,4 @@ export default function App() {
     </AppWrapper>
   );
 }
+

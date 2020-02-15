@@ -2,10 +2,7 @@
   "name": "viv3k.github.io",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
-  },
+  "homepage": "http://viv3k.github.io/",
   "engines": {
     "npm": ">=5",
     "node": ">=8.15.1"
@@ -169,7 +166,6 @@
   "bugs": {
     "url": "https://github.com/react-boilerplate/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/react-boilerplate/react-boilerplate#readme",
   "main": ".eslintrc.js",
   "directories": {
     "doc": "docs"
