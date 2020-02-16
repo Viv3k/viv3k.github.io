@@ -27,7 +27,7 @@ var __wpo = {
   },
   "externals": [],
   "hashesMap": {
-    "5e53ef208f3fa79a48f8374488f473c76e1233de": "/favicon.ico",
+    "1809a61ad30ad52d36ba369120d93f4b06623749": "/favicon.ico",
     "dd0a1da9fa779d9ab7980ea9cf6b1801303aa7fd": "/npm.intl.62ffc0b470803cf6ab21.chunk.js",
     "8216a0a2c0e68898398fb506c6bd0b825a10cebf": "/npm.redux-saga.73330e91205282f41978.chunk.js",
     "a32b8c4d069544d3731ecbfedfcdba7bb465e691": "/npm.webpack.68b1cf86149741bfe920.chunk.js",
@@ -45,11 +45,11 @@ var __wpo = {
     "ddf536a204e138eb248df8ca94a4b2aa6f4956cd": "/14.27f892c9d4926e12c5d0.chunk.js",
     "de7bfcdccc2a23ac43ebe9d517c6501fccdce5c7": "/15.a2bbd4dbeaf645e66f2e.chunk.js",
     "92685836f306abe727791678de887b69dab75d30": "/16.8e654ad7d82140fdcf3a.chunk.js",
-    "909de41dd7ed709a668e1072e448d19ddc7031e5": "/"
+    "fee07e3c99fd25980f7ac065c8748f671ceaf600": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2/16/2020, 10:05:15 PM",
+  "version": "2/16/2020, 11:40:01 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
