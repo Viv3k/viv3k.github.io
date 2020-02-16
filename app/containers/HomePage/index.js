@@ -11,6 +11,8 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
@@ -68,9 +70,6 @@ export function HomePage({
       </Helmet>
       <div>
         <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.introductionPlaceholder} />
-          </H2>
           <br />
           <p>
             <FormattedMessage {...messages.welcomePlaceholder} />
@@ -96,6 +95,10 @@ export function HomePage({
             </label>
           </Form>
           <ReposList {...reposListProps} />
+        </Section>
+        <br />
+        <Section>
+          <NotFoundPage />
         </Section>
       </div>
     </article>

@@ -4,8 +4,10 @@ import NormalImg from 'components/Img';
 
 const Img = styled(NormalImg)`
   width: 25px;
-  height: 25px
-  margin: 0 auto;
+  height: 25px;  
+  max-height: 50%;
+  margin:  auto;
+  padding: 10px
   display: block;
 `;
 

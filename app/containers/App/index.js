@@ -20,13 +20,22 @@ import Footer from 'components/Footer';
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(800px + 128px * 2);
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+`;
+
+
+const AppWrapper2 = styled.div`
+  max-width: calc(1024px + 128px * 2);
   margin: 0 auto;
   display: flex;
   min-height: 100%;
   padding: 0 16px;
   flex-direction: column;
 `;
+
 
 export default function App() {
   return (
@@ -38,11 +47,13 @@ export default function App() {
         <meta name="description" content="Personal website for github user Viv3k" />
       </Helmet>
       <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
+      <AppWrapper2>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/projects" component={FeaturePage} />
+          <Route path="" component={NotFoundPage} />
+        </Switch>
+        </AppWrapper2>
       <Footer />
       <GlobalStyle />
     </AppWrapper>
