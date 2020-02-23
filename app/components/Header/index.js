@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import Img from './Img';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import { Link } from 'react-router-dom'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import facebookIcon from './images/facebook.png'
 import twitterIcon from './images/twitter.svg'
 import glanceIcon from './images/glance.svg'
+import logo from './images/penrose.svg'
+
 class Header extends Component {
 
   componentDidMount() {
@@ -20,14 +23,16 @@ class Header extends Component {
     return (
       <div className="justify-content-md-center">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='px-5'>
-          <Navbar.Brand href="/" className="mx-4" >Viv3k</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" className="mx-4" >
+            <img src={logo} className="Header-logo" alt="logo" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="features" className="mx-4">Projects</Nav.Link>
-              <Nav.Link href="blog" className="mx-4">Blog</Nav.Link>
-              <Nav.Link href="comics" className="mx-4">Comics</Nav.Link>
-              <Nav.Link href="About" className="mx-4">About</Nav.Link>
+              <Nav.Link as={Link} to="projects" className="mx-4">Projects</Nav.Link>
+              <Nav.Link as={Link} to="blog" className="mx-4">Blog</Nav.Link>
+              <Nav.Link as={Link} to="comics" className="mx-4">Comics</Nav.Link>
+              <Nav.Link as={Link} to="About" className="mx-4">About</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
