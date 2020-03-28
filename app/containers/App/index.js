@@ -15,6 +15,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Comics from 'containers/Comics/Loadable';
+import About from 'containers/About/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -30,8 +31,8 @@ const AppWrapper = styled.div`
 
 const AppWrapper2 = styled.div`
   max-width: calc(1024px + 128px * 2);
+  width: 90%;
   margin: 0 auto;
-  display: flex;
   min-height: 100%;
   padding: 0 16px;
   flex-direction: column;
@@ -53,6 +54,7 @@ export default function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/projects" component={FeaturePage} />
           <Route path="/comics" component={Comics} />
+          <Route path="/about" component={About} />
           <Route path="" component={NotFoundPage} />
         </Switch>
         </AppWrapper2>

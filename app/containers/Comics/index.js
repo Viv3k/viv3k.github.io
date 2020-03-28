@@ -1,23 +1,20 @@
 /*
- * FeaturePage
+ * Comics page
  *
- * List all the features
+ * List all the favorite comics.
  */
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Card from 'react-bootstrap/Card';
 import CardColumns from 'react-bootstrap/Card';
 import xkcd from './images/xkcd.svg';
 import nathan from './images/nathan.svg';
 import monkey from './images/monkey.svg';
-import { FormattedMessage } from 'react-intl';
-
 import strings from './strings';
 
-
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { FormattedMessage } from 'react-intl';
 
-// TODO: Export card into a custom component.
 const useScript = url => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -31,8 +28,6 @@ const useScript = url => {
 };
 
 export default function Comics() {
-
-  useScript('https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js');
 
   return (
     <div className="vivek">
@@ -76,7 +71,10 @@ export default function Comics() {
         <Card>
           <Card.Img className='h=10' variant="top" src={nathan} />
           <Card.Body>
-            <Card.Title><a href="https://www.instagram.com/nathanwpylestrangeplanet/?hl=en" target='blank'><FormattedMessage {...strings.nathan} /></a></Card.Title>
+            <Card.Title>
+              <a href="https://www.instagram.com/nathanwpylestrangeplanet/?hl=en" target='blank'>
+                <FormattedMessage {...strings.nathan} />
+              </a></Card.Title>
             <Card.Text>
               <p><FormattedMessage {...strings.nathan.desc} /></p>
             </Card.Text>
@@ -90,7 +88,8 @@ export default function Comics() {
         <Card>
           <Card.Img variant="top" src={monkey} className='h-50' />
           <Card.Body>
-            <Card.Title><a href='http://monkeyuser.com' target='blank'><FormattedMessage {...strings.monkey} /></a></Card.Title>
+            <Card.Title><a href='http://monkeyuser.com' target='blank'>
+              <FormattedMessage {...strings.monkey} /></a></Card.Title>
             <Card.Text>
               <FormattedMessage {...strings.monkey.desc} />
             </Card.Text>

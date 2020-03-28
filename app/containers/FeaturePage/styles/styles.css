@@ -1,0 +1,10 @@
+.myaccordion .some{
+    min-width:  200%;
+    font-weight: bold;
+    color: hsl(208, 100%, 26%);
+    padding: 0;
+  }
+
+.heading {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}

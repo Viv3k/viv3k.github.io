@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import facebookIcon from './images/facebook.png'
 import twitterIcon from './images/twitter.svg'
 import glanceIcon from './images/glance.svg'
+import githubIcon from './images/github.png'
 import logo from './images/penrose.svg'
 
 import './styles/styles.css'
@@ -44,10 +45,13 @@ class Header extends Component {
               </NavDropdown> */}
             </Nav>
             <Nav className='mx-4 flex-row'>
-              <Nav.Link eventKey={2} href="https://www.facebook.com/VivekDarsanapu" target="_blank">
+              <Nav.Link eventKey={4} href="https://github.com/Viv3k/" target="_blank">
+                <Img src={githubIcon} alt="githubIcon" />
+              </Nav.Link>
+              <Nav.Link eventKey={3} href="https://www.facebook.com/VivekDarsanapu" target="_blank">
                 <Img src={facebookIcon} alt="facebookIcon" />
               </Nav.Link>
-              <Nav.Link eventKey={3} href="https://twitter.com/Vivek_6055" target="_blank">
+              <Nav.Link eventKey={2} href="https://twitter.com/Vivek_6055" target="_blank">
                 <Img src={twitterIcon} alt="twitterIcon"/>
               </Nav.Link>
               <Nav.Link eventKey={1} href="https://glance.com" target="_blank" className='p-1 mt-1'>
