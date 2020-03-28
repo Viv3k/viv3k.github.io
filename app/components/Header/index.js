@@ -9,6 +9,8 @@ import twitterIcon from './images/twitter.svg'
 import glanceIcon from './images/glance.svg'
 import logo from './images/penrose.svg'
 
+import './styles/styles.css'
+
 class Header extends Component {
 
   componentDidMount() {
