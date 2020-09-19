@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import facebookIcon from './images/facebook.png'
 import twitterIcon from './images/twitter.svg'
 import glanceIcon from './images/glance.svg'
-import githubIcon from './images/github.png'
+import githubIcon from './images/github.svg'
 import logo from './images/penrose.svg'
 
 import './styles/styles.css'
@@ -44,18 +44,18 @@ class Header extends Component {
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown> */}
             </Nav>
-            <Nav className='mx-4 flex-row'>
-              <Nav.Link eventKey={4} href="https://github.com/Viv3k/" target="_blank">
-                <Img src={githubIcon} alt="githubIcon" />
+            <Nav className='flex-row'>
+              <Nav.Link eventKey={4} href="https://github.com/Viv3k/" target="_blank" className='py-0 social-icon'>
+                              <Img src={githubIcon} alt="githubIcon" />
               </Nav.Link>
-              <Nav.Link eventKey={3} href="https://www.facebook.com/VivekDarsanapu" target="_blank">
+              <Nav.Link eventKey={3} href="https://www.facebook.com/VivekDarsanapu" target="_blank" className='py-0 social-icon'>
                 <Img src={facebookIcon} alt="facebookIcon" />
               </Nav.Link>
-              <Nav.Link eventKey={2} href="https://twitter.com/Vivek_6055" target="_blank">
+              <Nav.Link eventKey={2} href="https://twitter.com/Vivek_6055" target="_blank" className='py-0 social-icon'>
                 <Img src={twitterIcon} alt="twitterIcon"/>
               </Nav.Link>
-              <Nav.Link eventKey={1} href="https://glance.com" target="_blank" className='p-1 mt-1'>
-                <Img src={glanceIcon} alt="glanceIcon"/>
+              <Nav.Link eventKey={1} href="https://glance.com" target="_blank" className='px-1 py-0 h-50'>
+                <Img src={glanceIcon} className='py-1' alt="glanceIcon"/>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

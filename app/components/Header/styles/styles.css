@@ -10,3 +10,7 @@
 .Header-logo {
     animation: Header-logo-spin infinite 40s linear;
 }
+
+.social-icon {
+	height: 100% !important;
+}

@@ -33,6 +33,9 @@ export default function FeaturePage() {
           </Accordion.Collapse>
         </Card>
         
+        <br/>
+
+        
         <Card border="primary">
           <Accordion.Toggle as={Card.Header} eventKey="1">
             Click me!
