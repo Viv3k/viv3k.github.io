@@ -52,8 +52,8 @@ export default function App() {
       <AppWrapper2>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/projects" component={FeaturePage} />
           <Route path="/comics" component={Comics} />
+          <Route path="/projects" component={FeaturePage} />
           <Route path="/about" component={About} />
           <Route path="" component={NotFoundPage} />
         </Switch>
