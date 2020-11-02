@@ -46,7 +46,7 @@ export default function App() {
         titleTemplate="%s"
         defaultTitle="Vivek Darsanapu"
       >
-        <meta name="description" content="Personal website of Vivek Darsanapu" />
+        <meta name="Vivek Darsanapu" content="Personal website of Vivek Darsanapu" />
       </Helmet>
       <Header />
       <AppWrapper2>
