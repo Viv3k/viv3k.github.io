@@ -34,6 +34,8 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Button from 'react-bootstrap/Button'
 
 const key = 'home';
 
@@ -62,23 +64,27 @@ export function HomePage({
   return (
     <article>
       <Helmet>
-        <title>Home Page</title>
+        <title>Vivek Darsanapu</title>
         <meta
-          name="Home"
-          content="Home of the dev log"
+          name="Vivek Darsanapu"
+          content="Personal website for Vivek Darsanapu"
         />
       </Helmet>
       <div>
-        <CenteredSection>
-          <br />
+        <Jumbotron>
+          <h1>
+            <FormattedMessage {...messages.aboutPage} />
+          </h1>
           <p>
-            <FormattedMessage {...messages.welcomePlaceholder} />
+            <FormattedMessage {...messages.aboutPage.desc} />
           </p>
-        </CenteredSection>
-        <br />
-        <Section>
-          <NotFoundPage />
-        </Section>
+          <p>
+            <FormattedMessage {...messages.aboutPage.goodbye} />
+          </p>
+          <p>
+            <Button variant="primary"><FormattedMessage {...messages.aboutPage.justBye} /></Button>
+          </p>
+      </Jumbotron>
       </div>
     </article>
   );

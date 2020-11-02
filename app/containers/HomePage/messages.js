@@ -29,4 +29,20 @@ export default defineMessages({
     id: `${scope}.tryme.atPrefix`,
     defaultMessage: '@',
   },
+  aboutPage: {
+    id: `${scope}.name`,
+    defaultMessage: 'Hi :)',
+    desc: {
+        id: `${scope}.desc`,
+        defaultMessage: 'I\'m Vivek Darsanapu, CS graduate from IIT Madras, currently working at glance.app. I love exploring new tech stacks and building stuff. I built this webpage encapsulate my projects and other interests. Watch this space for the stuff I do'
+    },
+    goodbye: {
+      id: `${scope}.goodbye`,
+      defaultMessage: 'Have a nice day!',  
+    },
+    justBye: {
+      id: `${scope}.justBye`,
+      defaultMessage: 'Bye',  
+    }
+  }
 });

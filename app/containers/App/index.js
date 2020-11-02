@@ -43,10 +43,10 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - Viv3k"
-        defaultTitle="Viv3k"
+        titleTemplate="%s"
+        defaultTitle="Vivek Darsanapu"
       >
-        <meta name="description" content="Personal website for github user Viv3k" />
+        <meta name="description" content="Personal website of Vivek Darsanapu" />
       </Helmet>
       <Header />
       <AppWrapper2>
