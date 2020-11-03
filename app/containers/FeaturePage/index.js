@@ -14,8 +14,10 @@ import H1 from 'components/H1';
 import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
+import ListGroup from 'react-bootstrap/ListGroup'
 import ListItemTitle from './ListItemTitle';
 import './styles/styles.css'
+import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Alert from 'react-bootstrap/Alert'
 
@@ -23,28 +25,48 @@ export default function FeaturePage() {
   return (
 
     <Container fluid>
-      <Accordion defaultActiveKey="0" className="myaccordion">
-        <Card border="dark">
-          <Accordion.Toggle as={Card.Header} eventKey="0" className="heading">
-            AOSP Project
-          </Accordion.Toggle>
-          <Accordion.Collapse eventKey="0">
-            <Card.Body>Hello! I'm the bodyasdeve</Card.Body>
-          </Accordion.Collapse>
-        </Card>
-        
-        <br/>
+        <ListGroup variant="flush">
+          <ListGroup.Item>
+            <Nav defaultActiveKey="/home" className="flex-column">
+              <Nav.Link href="/home">Android Open Source Project - Lockscreen Magazine Service</Nav.Link>
+              <p className="mx-3 desc"> This project objectively deals with changes to Android source code, in particular SystemUI
+                component, to have a wallpaper rotation service feed in a new wallpaper everytime the device wakes up.
+              </p>
 
-        
-        <Card border="primary">
-          <Accordion.Toggle as={Card.Header} eventKey="1">
-            Click me!
-    </Accordion.Toggle>
-          <Accordion.Collapse eventKey="1">
-            <Card.Body>Hello! I'm another body</Card.Body>
-          </Accordion.Collapse>
-        </Card>
-      </Accordion>
+            </Nav>
+          </ListGroup.Item>
+          <ListGroup.Item >
+            <Nav defaultActiveKey="/home" className="flex-column" >
+              <Nav.Link href="/home">Live streaming using AWS MediaLive and MediaSource</Nav.Link>
+              <p className="mx-3 desc"> Scalable live streaming infra to injest video source and churn out live streams to be
+                consumed by web and mobile applications. Support for both HLS (with AES-128 encryption) and DASH streams.
+              </p>
+            </Nav>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <Nav defaultActiveKey="/home" className="flex-column">
+              <Nav.Link href="/home">React Web Application on github.io</Nav.Link>
+              <p className="mx-3 desc"> A simple serverless React application hosted on github.io using gh-pages
+              </p>
+            </Nav>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <Nav defaultActiveKey="/home" className="flex-column" >
+              <Nav.Link href="/home">Unity AR - Enhanced surface detection</Nav.Link>
+              <p className="mx-3 desc"> Surface detection feature to identify curved surfaces and enable transitions of 3D models
+                over the surface. Granular surfical polygon overlay reaching a maximum of 10k polygons per frame.
+              </p>
+            </Nav>
+          </ListGroup.Item>
+          <ListGroup.Item>
+            <Nav defaultActiveKey="/home" className="flex-column" >
+              <Nav.Link href="/home">Volume manager application for multi-connect environment.</Nav.Link>
+              <p className="mx-3 desc"> Linux application to control multiple bluetooth connections allowed by Bluetooth version
+                5.0. Also creates a cool streo effect syncing all the devices to play one audio source signal.
+              </p>
+            </Nav>
+          </ListGroup.Item>
+        </ListGroup>
     </Container>
   );
 }
