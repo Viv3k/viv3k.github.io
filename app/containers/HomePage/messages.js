@@ -34,7 +34,7 @@ export default defineMessages({
     defaultMessage: 'Hi :)',
     desc: {
         id: `${scope}.desc`,
-        defaultMessage: 'I\'m Vivek Darsanapu, CS graduate from IIT Madras, currently working at glance.com. I love exploring new tech stacks and building stuff. I built this webpage encapsulate my projects and other interests. Watch this space for the stuff I do'
+        defaultMessage: 'I\'m Vivek Darsanapu, CS graduate from IIT Madras, currently working at glance.com. I love exploring new tech stacks and building stuff. I built this webpage to encapsulate my projects and other interests. Watch this space for the stuff I do'
     },
     goodbye: {
       id: `${scope}.goodbye`,
