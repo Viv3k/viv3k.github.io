@@ -32,9 +32,9 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-            <Nav.Link as={Link} to="projects" className="mx-4">Projects</Nav.Link>
-              <Nav.Link as={Link} to="comics" className="mx-4">Comics</Nav.Link>
-              <Nav.Link as={Link} to="blog" className="mx-4">Blog</Nav.Link>
+            <Nav.Link as={Link} to="projects" className="mx-4">PROJECTS</Nav.Link>
+              <Nav.Link as={Link} to="comics" className="mx-4">COMICS</Nav.Link>
+              <Nav.Link as={Link} to="blog" className="mx-4">BLOG</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

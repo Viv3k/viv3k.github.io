@@ -10,6 +10,9 @@
 .Header-logo {
     animation: Header-logo-spin infinite 40s linear;
 }
+.navbar-nav {
+	color: #f00 !important;
+}
 
 .social-icon {
 	height: 100% !important;

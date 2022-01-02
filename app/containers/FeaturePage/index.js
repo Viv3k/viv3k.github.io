@@ -25,17 +25,26 @@ export default function FeaturePage() {
   return (
 
     <Container fluid>
-        <ListGroup variant="flush">
+        <ListGroup variant="flush border-0">
           <ListGroup.Item>
             <Nav defaultActiveKey="/home" className="flex-column">
-              <Nav.Link href="/home">Android Open Source Project - Lockscreen Magazine Service</Nav.Link>
-              <p className="mx-3 desc"> This project objectively deals with changes to Android source code, in particular SystemUI
-                component, to have a wallpaper rotation service feed in a new wallpaper everytime the device wakes up.
-              </p>
-
+              
+                <Card class= "rounded">
+                  <Nav.Link href="/home" className = "titlex border-0">
+                    <Card.Header className = "heading">Android Open Source Project - Lockscreen Magazine Service</Card.Header>
+                  </Nav.Link>
+                  <Card.Body>
+                    <div className = "desc mx-3">
+                      <p className="mx-3 desc"> This project objectively deals with changes to Android source code, in particular SystemUI
+                        component, to have a wallpaper rotation service feed in a new wallpaper everytime the device wakes up.
+                      </p>
+                    </div>
+                  </Card.Body>
+                </Card>
+              
             </Nav>
           </ListGroup.Item>
-          <ListGroup.Item >
+          <ListGroup.Item className = "border-0">
             <Nav defaultActiveKey="/home" className="flex-column" >
               <Nav.Link href="/home">Live streaming using AWS MediaLive and MediaSource</Nav.Link>
               <p className="mx-3 desc"> Scalable live streaming infra to injest video source and churn out live streams to be
