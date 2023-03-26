@@ -30,3 +30,19 @@ body{
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 }
+
+h1 {
+  font-size: 250%;
+  color:#3e966f;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  margin:0px;
+}
+
+.desc {
+  color: #606060;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  max-width: 700px;
+  line-height: 1.5;
+}

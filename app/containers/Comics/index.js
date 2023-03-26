@@ -10,7 +10,7 @@ import xkcd from './images/xkcd.svg';
 import nathan from './images/nathan.svg';
 import monkey from './images/monkey.svg';
 import strings from './strings';
-
+import './styles/styles.css';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';

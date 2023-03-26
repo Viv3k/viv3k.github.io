@@ -15,11 +15,11 @@ import './styles/styles.css'
 class Header extends Component {
 
   componentDidMount() {
-    console.log("vivek did mount");
+    // console.log("vivek did mount");
   }
 
   componentWillUnmount() {
-    console.log("vivek will unmount");
+    // console.log("vivek will unmount");
   }
 
   render() { 

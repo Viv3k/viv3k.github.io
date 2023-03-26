@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
+import BlogPost from 'containers/BlogPost/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Comics from 'containers/Comics/Loadable';
 import About from 'containers/About/Loadable';
@@ -30,7 +31,7 @@ const AppWrapper = styled.div`
 
 
 const AppWrapper2 = styled.div`
-  max-width: calc(1024px + 128px * 2);
+  max-width: calc(720px + 128px * 2);
   width: 90%;
   margin: 0 auto;
   min-height: 100%;
@@ -52,6 +53,7 @@ export default function App() {
       <AppWrapper2>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/blog" component={BlogPost} />
           <Route path="/comics" component={Comics} />
           <Route path="/projects" component={FeaturePage} />
           <Route path="/about" component={About} />

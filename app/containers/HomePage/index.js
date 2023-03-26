@@ -4,7 +4,7 @@
  * This is the first thing users see of our App, at the '/' route
  */
 
-import React, { useEffect, memo } from 'react';
+import React, { useEffect, memo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
@@ -36,7 +36,10 @@ import reducer from './reducer';
 import saga from './saga';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
-
+import myImage from './images/me.jpg'
+import './styles/styles.css'
+import Img from '../../components/Img';
+import { text } from 'body-parser';
 const key = 'home';
 
 export function HomePage({
@@ -61,6 +64,11 @@ export function HomePage({
     repos,
   };
 
+  const mini = 0;
+  const maxi = 7;
+  const rando= parseInt(mini + Math.random() * (maxi - mini));
+  const [Text, setText] = useState(messages.aboutPage.quote1.defaultMessage[rando]);
+
   return (
     <article>
       <Helmet>
@@ -71,19 +79,37 @@ export function HomePage({
         />
       </Helmet>
       <div>
-        <Jumbotron>
-          <h1>
-            <FormattedMessage {...messages.aboutPage} />
-          </h1>
-          <p>
+        <Jumbotron className='mb-n1'>
+          <div className='row justify-content-between align-text-bottom'>
+            <h1 className='col align-self-end'>
+              <FormattedMessage {...messages.aboutPage} />
+            </h1>
+            <Img 
+             src={myImage} className="mx-5 rounded-circle" alt="Vivek Darsanapu" style={{width:100, height:100}}/>
+          </div>
+          <p className='mt-4 desc'>
             <FormattedMessage {...messages.aboutPage.desc} />
           </p>
-          <p>
+          <p className='desc'>
             <FormattedMessage {...messages.aboutPage.goodbye} />
           </p>
           <p>
-            <Button variant="primary"><FormattedMessage {...messages.aboutPage.justBye} /></Button>
+            <Button variant="primary" 
+                onClick={(e) => 
+                  {
+                    const min = 0;
+                    const max = 7;
+                    const rand = parseInt(min + Math.random() * (max - min));
+                    e.preventDefault();setText(messages.aboutPage.quote1.defaultMessage[rand])
+                  }
+                }>
+              <FormattedMessage {...messages.aboutPage.justBye} />
+            </Button>
           </p>
+          <blockquote className="blockquote text-center">
+            <text className="small desc text-center">{Text}</text>
+            <footer className="blockquote-footer small mt-2" style={{fontSize:10}}><FormattedMessage {...messages.aboutPage.note}/></footer>
+          </blockquote>
       </Jumbotron>
       </div>
     </article>

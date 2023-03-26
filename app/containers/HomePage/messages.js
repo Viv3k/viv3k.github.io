@@ -31,10 +31,10 @@ export default defineMessages({
   },
   aboutPage: {
     id: `${scope}.name`,
-    defaultMessage: 'Hi :)',
+    defaultMessage: 'Hello,',
     desc: {
         id: `${scope}.desc`,
-        defaultMessage: 'I\'m Vivek Darsanapu, CS graduate from IIT Madras, currently working at glance.com. I love exploring new tech stacks and building stuff. I built this webpage to encapsulate my projects and other interests. Watch this space for the stuff I do'
+        defaultMessage: 'I\'m Vivek Darsanapu, CS graduate from IIT Madras, currently working at glance.com. I play around exploring new tech stacks and building stuff. I built this webpage to encapsulate my projects and other interests. Watch this space for the stuff I do'
     },
     goodbye: {
       id: `${scope}.goodbye`,
@@ -42,7 +42,22 @@ export default defineMessages({
     },
     justBye: {
       id: `${scope}.justBye`,
-      defaultMessage: 'Bye',  
+      defaultMessage: 'Bye!?',  
+    },
+    quote1: {
+      id: `${scope}.quote1`,
+      defaultMessage: ['A cow doesn\'t know pain of laying an egg.',  
+                 'You can call TajMahal is an over-engineered tombstone. Objective matters.',  
+                  'Everything is a normal distribution.', 
+                  'Let\'s call it a grand success.',
+                  'Okay, Thanks, Bye',
+                  'You are using GUI for Git? What are you five years old?',
+                  'This server is seems to like going down on everything.',
+      ],
+    },
+    note: {
+      id: `${scope}.note`,
+      defaultMessage: 'workplace gems',  
     }
   }
 });
