@@ -40,7 +40,9 @@ export default function Comics() {
                 <FormattedMessage {...strings.xkcd} />
               </a></Card.Title>
             <Card.Text>
+            <p className='desc'>
               <FormattedMessage {...strings.xkcd.desc} />
+            </p>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -73,10 +75,10 @@ export default function Comics() {
           <Card.Body>
             <Card.Title>
               <a href="https://www.instagram.com/nathanwpylestrangeplanet/?hl=en" target='blank'>
-                <FormattedMessage {...strings.nathan} />
+                <p className='text-center'><FormattedMessage {...strings.nathan} /> </p>
               </a></Card.Title>
             <Card.Text>
-              <p><FormattedMessage {...strings.nathan.desc} /></p>
+              <p className='desc text-center'><FormattedMessage {...strings.nathan.desc} /></p>
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -89,9 +91,15 @@ export default function Comics() {
           <Card.Img variant="top" src={monkey} className='h-50' />
           <Card.Body>
             <Card.Title><a href='http://monkeyuser.com' target='blank'>
-              <FormattedMessage {...strings.monkey} /></a></Card.Title>
+              <p className='text-right'>
+                <FormattedMessage {...strings.monkey} />
+              </p>
+            </a>
+              </Card.Title>
             <Card.Text>
-              <FormattedMessage {...strings.monkey.desc} />
+              <p className='desc text-right'>
+                <FormattedMessage {...strings.monkey.desc} />
+              </p>
             </Card.Text>
           </Card.Body>
         </Card>
